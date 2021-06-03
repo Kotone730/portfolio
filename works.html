@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>廣瀬琴音ポートフォリオ</title>
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script>
+$(function(){
+   // #で始まるアンカーをクリックした場合に処理
+   $('a[href^=#]').click(function() {
+    var headerHight = 120;
+      // スクロールの速度
+      var speed = 400; // ミリ秒
+      // アンカーの値取得
+      var href= $(this).attr("href");
+      // 移動先を取得
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      // 移動先を数値で取得
+      var position =  target.offset().top-headerHight;
+      // スムーススクロール
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+   });
+});
+</script>
+
+</head>
+
+
+<body>
+    <header>
+        <div class="header">
+
+            <nav class="gnav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="works.html">Works</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+   <main class="back">
+
+       <div class="about_me2">
+           <p class="title_sub3">Works</p>
+           <h3 class="title">今までの課題</h3>
+            <hr width="5%" size="5%" color="#ec1e79" noshade="">
+
+
+            <ul class="index">
+                <li><a href="#sec1">Logos</a></li>
+                <li><a href="#sec2">Advertising</a></li>
+                <li><a href="#sec3">Poster</a></li>
+                <li><a href="#sec4">Web</a></li>
+                <li><a href="#sec5">Package</a></li>
+                <li><a href="#sec6">Illustration</a></li>
+            </ul>
+            
+            <hr width="90%" size="1%" color="#000" noshade="">
+
+        <div class="section">
+                <div id="sec1">
+                <h2>ロゴ</h2>
+                <p class="sec_title">Logos</p>
+                <ul class="sec_img">
+                <li>
+                    <a href="miraistart.html">
+                    <div class="sec_thumbnail">
+                        <img src="images/mirai.png" alt="">
+                    </div>
+                    <p>株式会社ミライスタート様</p>
+                </a>
+                </li>
+
+                <li>
+                    <a href="mark_logo.html">
+                    <div class="sec_thumbnail">
+                        <img src="images/mark.png" alt="">
+                    </div>
+                    <p>マークシックス株式会社様</p>
+                </a>
+                </li>
+                </ul>
+                </div>
+            
+            <div id="sec2">
+                <h2>広告</h2>
+                <p class="sec_title">Advertising</p>
+                <ul class="sec_img">
+                    <li>
+                    <a href="T-fal.html">
+                        <div class="sec_thumbnail">
+                            <img src="images/t-fal.png" alt="">
+                        </div>
+                        <p>T-fal様</p>
+                    </a>
+                    </li>
+                    </ul>
+            </div>
+            
+            <div id="sec3">
+                <h2>ポスター</h2>
+                <p class="sec_title">Poster</p>
+                <ul class="sec_img">
+                    <li>
+                        <a href="laforet.html">
+                        <div class="sec_thumbnail">
+                            <img src="images/laforet.png" alt="">
+                        </div>
+                        <p>ラフォーレ原宿様</p>
+                        </a>
+                    </li>
+                    </ul>
+            </div>
+            
+            <div id="sec4">
+                <h2>WEB</h2>
+                <p class="sec_title">Web</p>
+                <ul class="sec_img">
+                    <li>
+                        <a href="mark_web.html">
+                        <div class="sec_thumbnail">
+                            <img src="images/mark_web.png" alt="">
+                        </div>
+                        <p>マークシックス株式会社様</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="sagara.html">
+                        <div class="sec_thumbnail">
+                            <img src="images/sagara.png" alt="">
+                        </div>
+                        <p>相良医院様</p>
+                        </a>
+                    </li>
+                    </ul>
+            </div>
+            
+            <div id="sec5">
+                <h2>パッケージ</h2>
+                <p class="sec_title">Package</p>
+                <ul class="sec_img">
+                    <li>
+                        <a href="gloom.html">
+                        <div class="sec_thumbnail">
+                            <img src="images/gloom.png" alt="">
+                        </div>
+                        <p>生理用品 gloom</p>
+                        </a>
+                    </li>
+                    </ul>
+            </div>
+            
+            <div id="sec6">
+                <h2>イラスト</h2>
+                <p class="sec_title">Illustration</p>
+                <ul class="sec_img">
+                    <li>
+                        <a href="blythe.html">
+                        <div class="sec_thumbnail">
+                            <img src="images/blythe.png" alt="">
+                        </div>
+                        <p>リアルイラスト</p>
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="line.html">
+                        <div class="sec_thumbnail">
+                            <img src="images/line.png" alt="">
+                        </div>
+                        <p>LINEスタンプ</p>
+                        </a>
+                    </li>
+                    </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;Hirose Kotone</p>
+    </footer>
+
+</body>
+</html>
